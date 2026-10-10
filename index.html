@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#121212">
+  <meta name="description" content="Digital menu: shawarma, pizza, tacos, burgers, sandwiches, salads and drinks.">
+  <title>Braise Snack Café | Menu</title>
+  <link rel="preload" as="image" href="assets/images/shawarma.jpg" fetchpriority="high">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="siteHeader">
+    <div class="status-bar">
+      <p class="status" id="status" role="status" aria-live="polite">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span id="statusLabel">Loading…</span>
+      </p>
+      <div class="status-links">
+        <a id="mapLink" class="status-link" href="#" target="_blank" rel="noopener" aria-label="Open location in Google Maps">
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/></svg>
+          <span class="hide-narrow">Map</span>
+        </a>
+        <a id="phoneLink" class="status-link" href="#" aria-label="Call us">
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path fill="currentColor" d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1Z"/></svg>
+          <span id="phoneText" class="hide-xs"></span>
+        </a>
+        <button id="themeToggle" class="icon-btn" type="button" aria-label="Switch to light theme"><svg class="icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.5 1.5M17.2 17.2l1.5 1.5M5.3 18.7l1.5-1.5M17.2 6.8l1.5-1.5"/></g></svg></button>
+      </div>
+    </div>
+
+    <nav class="tabs" role="tablist" aria-label="Main sections">
+      <button class="tab" role="tab" id="tab-home" data-view="home" aria-controls="view-home" aria-selected="true">Home</button>
+      <button class="tab" role="tab" id="tab-menu" data-view="menu" aria-controls="view-menu" aria-selected="false" tabindex="-1">Menu</button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HOME -->
+    <section class="view" id="view-home" role="tabpanel" aria-labelledby="tab-home">
+      <div class="hero" id="hero">
+        <div class="hero-slides" id="heroSlides" aria-hidden="false"></div>
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+          <p class="eyebrow" id="heroEyebrow"></p>
+          <h1 id="heroTitle">Digital Menu</h1>
+          <p class="hero-sub" id="heroSub"></p>
+          <button class="btn btn-primary" type="button" data-goto-menu>See the menu</button>
+        </div>
+
+        <div class="hero-dots" id="heroDots" aria-hidden="true"></div>
+        <ul class="cat-icons" id="catIcons" aria-label="Quick category links"></ul>
+      </div>
+
+      <div class="shell">
+        <div class="actions" id="actions"></div>
+        <p class="load-error" id="loadError" hidden></p>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="view" id="view-menu" role="tabpanel" aria-labelledby="tab-menu" hidden>
+      <div class="shell">
+        <div class="menu-toggle" id="menuToggle" role="tablist" aria-label="Menu type"></div>
+      </div>
+
+      <div class="menu-sticky" id="menuSticky">
+        <div class="shell">
+          <label class="search" for="search">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" d="M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14Zm9 16-4-4"/></svg>
+            <input id="search" type="search" placeholder="Search dishes..." autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search" aria-label="Search dishes">
+          </label>
+          <div class="pills" id="pills" role="toolbar" aria-label="Filter by category"></div>
+        </div>
+      </div>
+
+      <div class="shell">
+        <div id="menuList"></div>
+        <p class="empty" id="empty" hidden>No dishes match “<span id="emptyQ"></span>”. Try another word.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell">
+      <p id="footerText"></p>
+    </div>
+  </footer>
+
+  <noscript><p class="noscript">This menu needs JavaScript to load. Please enable it and refresh.</p></noscript>
+  <script type="module" src="scripts/app.js"></script>
+</body>
+</html>

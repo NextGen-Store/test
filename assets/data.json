@@ -1,0 +1,101 @@
+{
+  "business": {
+    "name": "Braise Snack Café",
+    "tagline": "Fresh off the grill, every single day",
+    "phone": "+212600000000",
+    "phoneDisplay": "+212 600 000 000",
+    "address": "Your Street, Your City",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Your+Street+Your+City",
+    "currency": "DH",
+    "hours": {
+      "open": "10:00",
+      "close": "23:30",
+      "timezone": "Africa/Casablanca",
+      "display": [
+        { "label": "Monday – Sunday", "value": "10:00 – 23:30" }
+      ]
+    }
+  },
+  "hero": {
+    "eyebrow": "Snack · Grill · Delivery",
+    "headline": "Hungry? You're in the right place.",
+    "subline": "Shawarma, pizza, tacos and more, made fresh to order.",
+    "slides": [
+      { "image": "assets/images/shawarma.jpg", "alt": "Chicken shawarma roasting on a vertical spit" },
+      { "image": "assets/images/pizza.webp", "alt": "Pizza with olives, peppers and melted cheese" },
+      { "image": "assets/images/tacos.webp", "alt": "Grilled tacos wrap stuffed with chicken and fries" }
+    ]
+  },
+  "menus": [
+    { "id": "food", "label": "Food Menu" },
+    { "id": "drink", "label": "Drink Menu" }
+  ],
+  "categories": [
+    {
+      "id": "pizza", "menu": "food", "name": "Pizza", "icon": "pizza",
+      "blurb": "Hand-stretched dough, baked until the cheese bubbles.",
+      "image": "assets/images/pizza.webp", "imageAlt": "Sliced pizza with olives, tomato and basil"
+    },
+    {
+      "id": "shawarma", "menu": "food", "name": "Shawarma", "icon": "shawarma",
+      "blurb": "Marinated chicken, carved to order off the spit.",
+      "image": "assets/images/shawarma.jpg", "imageAlt": "Golden chicken shawarma on a rotisserie"
+    },
+    {
+      "id": "tacos", "menu": "food", "name": "Tacos", "icon": "tacos",
+      "blurb": "Pressed and grilled wraps, loaded and sauced.",
+      "image": "assets/images/tacos.webp", "imageAlt": "Grilled tacos cut in half showing the filling"
+    },
+    {
+      "id": "sandwiches", "menu": "food", "name": "Sandwiches", "icon": "sandwich",
+      "blurb": "Crusty bread, crisp veg, generous fillings.",
+      "image": "assets/images/sandwich-tuna.webp", "imageAlt": "Tuna baguette with lettuce, tomato and peppers"
+    },
+    {
+      "id": "burgers", "menu": "food", "name": "Burgers", "icon": "burger",
+      "blurb": "Smashed patties on toasted buns.",
+      "image": "", "imageAlt": ""
+    },
+    {
+      "id": "salads", "menu": "food", "name": "Salads", "icon": "salad",
+      "blurb": "Light, crunchy and dressed to order.",
+      "image": "assets/images/salad.webp", "imageAlt": "Colourful salad bowl with avocado, corn, feta and red cabbage"
+    },
+    {
+      "id": "drinks", "menu": "drink", "name": "Drinks", "icon": "drink",
+      "blurb": "Cold, fresh, or hot and sweet.",
+      "image": "", "imageAlt": ""
+    }
+  ],
+  "items": [
+    { "id": "pz-margherita", "category": "pizza", "name": "Margherita", "price": 40, "description": "Tomato sauce, mozzarella, fresh basil, olive oil.", "badges": ["veg"] },
+    { "id": "pz-veggie", "category": "pizza", "name": "Veggie Garden", "price": 52, "description": "Mozzarella, tomato slices, black olives, green peppers, red onion, basil.", "badges": ["veg", "popular"] },
+    { "id": "pz-chicken", "category": "pizza", "name": "Chicken BBQ", "price": 60, "description": "Grilled chicken, smoky BBQ sauce, mozzarella, onions.", "badges": [] },
+    { "id": "pz-diavola", "category": "pizza", "name": "Diavola", "price": 58, "description": "Spicy sausage, chilli flakes, mozzarella, tomato sauce.", "badges": ["spicy"] },
+
+    { "id": "sh-sandwich", "category": "shawarma", "name": "Chicken Shawarma Sandwich", "price": 30, "description": "Sliced chicken, pickles, garlic sauce, toasted flatbread.", "badges": ["popular"] },
+    { "id": "sh-plate", "category": "shawarma", "name": "Shawarma Plate", "price": 48, "description": "Chicken shawarma, golden fries, salad, garlic sauce.", "badges": [] },
+    { "id": "sh-spicy", "category": "shawarma", "name": "Spicy Shawarma Wrap", "price": 34, "description": "Chicken shawarma, harissa, pickled cucumber, crispy onions.", "badges": ["spicy"] },
+
+    { "id": "tc-chicken", "category": "tacos", "name": "Chicken Tacos", "price": 40, "description": "Grilled chicken, fries, melted cheese, creamy sauce in a pressed wrap.", "badges": ["popular"] },
+    { "id": "tc-mixed", "category": "tacos", "name": "Mixed Tacos", "price": 50, "description": "Chicken and minced beef, fries, cheddar sauce, house sauce.", "badges": [] },
+    { "id": "tc-spicy", "category": "tacos", "name": "Fire Tacos", "price": 46, "description": "Chicken, jalapeños, spicy sauce, fries, cheese.", "badges": ["spicy"] },
+
+    { "id": "sw-tuna", "category": "sandwiches", "name": "Tuna Baguette", "price": 25, "description": "Creamy tuna, lettuce, tomato, peppers, crusty baguette.", "badges": [] },
+    { "id": "sw-panini", "category": "sandwiches", "name": "Turkey & Cheese Panini", "price": 30, "description": "Smoked turkey, melted cheese, tomato, pressed hot.", "badges": [] },
+    { "id": "sw-crispy", "category": "sandwiches", "name": "Crispy Chicken Sandwich", "price": 35, "description": "Crunchy chicken fillet, lettuce, pickles, mayo.", "badges": [] },
+
+    { "id": "bg-classic", "category": "burgers", "name": "Classic Burger", "price": 40, "description": "Beef patty, cheddar, lettuce, tomato, house sauce.", "badges": [] },
+    { "id": "bg-double", "category": "burgers", "name": "Double Cheese", "price": 55, "description": "Two smashed patties, double cheddar, pickles, caramelised onion.", "badges": ["popular"] },
+    { "id": "bg-spicy", "category": "burgers", "name": "Spicy Chicken Burger", "price": 45, "description": "Crispy chicken, jalapeños, spicy mayo, lettuce.", "badges": ["spicy"] },
+
+    { "id": "sl-garden", "category": "salads", "name": "Garden Crunch", "price": 38, "description": "Avocado, sweet corn, feta, red cabbage, cucumber, tomato, lemon dressing.", "badges": ["veg"] },
+    { "id": "sl-tuna", "category": "salads", "name": "Tuna Salad", "price": 40, "description": "Tuna, lettuce, tomato, corn, red onion, olive oil.", "badges": [] },
+
+    { "id": "dr-orange", "category": "drinks", "name": "Fresh Orange Juice", "price": 15, "description": "Squeezed to order.", "badges": ["veg"] },
+    { "id": "dr-avocado", "category": "drinks", "name": "Avocado Smoothie", "price": 22, "description": "Avocado, milk, a touch of honey.", "badges": ["veg", "popular"] },
+    { "id": "dr-iced-coffee", "category": "drinks", "name": "Iced Coffee", "price": 18, "description": "Espresso, cold milk, ice.", "badges": [] },
+    { "id": "dr-mint-tea", "category": "drinks", "name": "Mint Tea", "price": 10, "description": "Moroccan-style green tea with fresh mint.", "badges": ["veg"] },
+    { "id": "dr-soda", "category": "drinks", "name": "Soft Drink", "price": 10, "description": "Ask for today's selection, served ice cold.", "badges": [] }
+  ]
+}
